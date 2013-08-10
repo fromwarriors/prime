@@ -7,6 +7,8 @@ def _clear_screen():
 
 def prime(x):
     x = abs(int(x))
+    if x == 1:
+	return False
     if x < 2:
         return True
     if not x & 1:
